@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <p id="allProfiles">Blank</p>
+        <button type="button" id="allUsers">Load all my users</button>
+    </div>
+    <div>
+        <p id="allFeed">Wall</p>
+        <button type="button" id="allMyFeed">Load all the post</button>
+    </div>
+
+    <div class="feedWall">
+        <div class="feedHeader">
+            <p class="feedTitle">Title: ${feed.title} </p>
+            <p class="feedAuthor">Author ${feed.name}</p>
+        </div>
+        <p class="feedContent"> ${feed.content} </p>
+    </div>
+</body>
+<script src="/dist/bundle.js"> const button = document.getElementById('allUsers');
+    if (button) {
+        button.addEventListener('click', getUsers);
+    }
+    
+    const button1 = document.getElementById('allMyFeed');
+    if (button1) {
+        button1.addEventListener('click', allTheFeed)
+    }</script>
+
+</html>
